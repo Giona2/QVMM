@@ -1,0 +1,8 @@
+[package]
+name = "qemu_vmm"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+utils = { path = "../utils/" }
+yaml-rust = "0.4.5"
