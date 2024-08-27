@@ -4,5 +4,5 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-utils = { path = "../utils/" }
+whoami = "1.5.1"
 yaml-rust = "0.4.5"
