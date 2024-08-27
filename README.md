@@ -17,4 +17,9 @@ cargo build --release
 ```
 The finished binary will be held in the target/release/ directory (``` ./QVMM/target/release/qvmm ```)
 ## How It Works
-As stated, it uses Qemu
+As stated, it uses Qemu as a basis to operate on. All QVMM does is adds a bit of structure and automation to accomplish the same tasks
+When you create a new VM
+```bash
+qvmm new
+```
+
