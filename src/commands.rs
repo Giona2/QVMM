@@ -1,7 +1,7 @@
 use std::{ffi::OsString, fs};
 use std::io::Error;
 use std::process::Command;
-use utils::system::terminal;
+use crate::utils::terminal;
 use yaml_rust::YamlLoader;
 
 use crate::DATA_DIR;
