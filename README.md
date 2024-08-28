@@ -33,3 +33,5 @@ $HOME/.local/share/qvmm/VM_Name
 |- disks/
    |- 0_current.qcow2
 ```
+The config.yaml file in future iterations will contain various information not defined by default in the VM's disk. At the moment it just tells the virtual machine how much RAM it's allowed use
+### Timeline Feature
