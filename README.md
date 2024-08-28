@@ -17,7 +17,7 @@ cargo build --release
 ```
 The finished binary will be held in the target/release/ directory (```./QVMM/target/release/qvmm```)
 ## How It Works
-As stated, it uses Qemu as a basis to operate on. All QVMM does is adds a bit of structure and automation to accomplish the same tasks.
+As stated, it uses Qemu as a basis to operate on. QVMM only adds a bit of structure and automation to accomplish the same tasks.
 When you create a new virtual machine (VM)...
 ```bash
 qvmm new
@@ -26,3 +26,10 @@ it does a few things:
 1. creates a new folder with the name of the VM in the application's data directory (```$HOME/.local/share/qvmm/```)
 2. creates a config.yaml file in this folder
 3. creates a disk directory with the qcow2 files. This allows for the timeline feature which I'll detail below
+The file final file directory should look something like this:
+$HOME/.local/share/qvmm/VM_Name
+```
+|- config.yaml
+|- disks/
+   |- 0_current.qcow2
+```
