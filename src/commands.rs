@@ -9,14 +9,14 @@ use crate::DATA_DIR;
 
 pub fn run_continuous() { let selected_vm: &str = &terminal::input("Selected Virtual Machine Name > "); loop {
 	let option: &str = &terminal::input(&(selected_vm.to_string() + " > ")); match option {
-		"run"			=> run(Some(selected_vm)),
-		"remove"		=> {remove(Some(selected_vm)); break;}
-		"create-event"	=> create_event(Some(selected_vm)),
-		"revert-back"	=> revert_back(Some(selected_vm)),
-		"show-timeline"	=> show_timeline(Some(selected_vm)),
-		"exit"			=> break,
-		"clear"			=> continuous_mode::clear_terminal(),
-		"help" | _		=> continuous_mode::help(selected_vm)
+		"run"           => run(Some(selected_vm)),
+		"remove"        => {remove(Some(selected_vm)); break;}
+		"create-event"  => create_event(Some(selected_vm)),
+		"revert-back"   => revert_back(Some(selected_vm)),
+		"show-timeline" => show_timeline(Some(selected_vm)),
+		"exit"          => break,
+		"clear"         => continuous_mode::clear_terminal(),
+		"help" | _      => continuous_mode::help(selected_vm)
 	}
 }}
 

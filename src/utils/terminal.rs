@@ -1,6 +1,5 @@
-use std::process::Command;
 use std::io::{self, Write};
-use whoami::{self, Platform};
+
 
 pub fn input(prompt: &str) -> String {
 	print!("{}", prompt);
