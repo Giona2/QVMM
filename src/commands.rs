@@ -165,14 +165,14 @@ pub fn show_timeline(vm_name: Option<&str>) {
 
 pub fn help() {
 	println!();
-	println!("qemu-vmm               | run in continuous mode");
-	println!("qemu-vmm new           | create a new VM");
-	println!("qemu-vmm list          | list all existing VMs");
-	println!("qemu-vmm run           | run an existing VM");
-	println!("qemu-vmm remove        | remove an existing VM");
-	println!("qemu-vmm rename        | rename an existing VM");
-	println!("qemu-vmm create-event  | creates a new event in an existing VM's timeline");
-	println!("qemu-vmm revert-back   | reverts back to the last event");
-	println!("qemu-vmm show-timeline | displays the selected VM's timeline");
+	println!("qvmm               | run in continuous mode");
+	println!("qvmm new           | create a new VM");
+	println!("qvmm list          | list all existing VMs");
+	println!("qvmm run           | run an existing VM");
+	println!("qvmm remove        | remove an existing VM");
+	println!("qvmm rename        | rename an existing VM");
+	println!("qvmm create-event  | creates a new event in an existing VM's timeline");
+	println!("qvmm revert-back   | reverts back to the last event");
+	println!("qvmm show-timeline | displays the selected VM's timeline");
 	println!();
 }
