@@ -1,19 +1,15 @@
 use std::env;
 use std::fs;
-use whoami;
-
 
 mod commands;
 mod utils;
+pub mod data;
+use data::get_data_dir;
 
-const DATA_DIR: &str = "/home/jonah/.local/share/qemu_vmm";
-fn get_date_dir() -> String {
-    return format!("/home/{}/.local/share/qemu_vmm", whoami::username());
-}
 
 fn main() {
-    if !fs::exists(get_date_dir()).unwrap() {
-        fs::create_dir(get_date_dir())
+    if !fs::exists(get_data_dir()).unwrap() {
+        fs::create_dir(get_data_dir())
             .expect("Failed to make the app data folder");
     }
 
